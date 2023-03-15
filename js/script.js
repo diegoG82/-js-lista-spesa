@@ -25,16 +25,18 @@ while
     (i < listaDellaSpesa.length){
 
         // CREO ELEMENTO LI NEL DOM
-        let li = document.createElement("li");
+        let li = document.createElement("li"); 
 
         // CON APPEND METTO NELLA LI GLI ELEMENTI DELL'ARRAY
         li.append(listaDellaSpesa[i]);
 
         // CON APPEND METTO NELLA UL GLI ELEMENTI LI
         ul.append(li);
+
+        // ul.innerHTML += '<li>${listaDellaSpesa[i]}</li>'; metodo tramite innerHTML
  
         i++ 
-        // (se non lo metto ciclo infinito?)
+        // (se non lo metto ciclo infinito perche altrimenti la condizione di uscita while e' sempre vera)
     }
 
 
@@ -56,7 +58,7 @@ while
         // for (let i = 0; i < listaDellaSpesadue.length; i++) {
       
         // // AL VALORE VUOTO DI LISTITEMS VIENE AGGIUNTO (+-) UN LI CHE CONTIENE IL VALORE I PRESENTE NELL'ARRAY(LISTADELLASPESADUE) DA 0 A 4 NEL NOSTRO CASO SPECIFICO
-        // listItems += `<li>${listaDellaSpesadue[i]}</li>`;
+        // listItems += `<li>${listaDellaSpesadue[i]}</li>`; Ad ogni giro del ciclo aggiungi un pezzo.
         
         // listElem.innerHTML = listItems; (PERCHE' ALLA FINE DEL CICLO E NON AL SUO INTERNO?)
 
